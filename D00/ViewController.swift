@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         {
             resultLabel.text = resultLabel.text! + String(sender.tag)
         }
-        numOutput = numOutput + Double(resultLabel.text!)!
+        numOutput = Double(resultLabel.text!)!
         if sender.tag == 16
         {
             numOutput = -numOutput
@@ -37,19 +37,19 @@ class ViewController: UIViewController {
         if resultLabel.text != "" && sender.tag != 15 && sender.tag != 10
         {
             firstNum = Double(resultLabel.text!)!
-            if sender.tag == 11    // '/'
+            if sender.tag == 11
             {
                 resultLabel.text = "/"
             }
-            else if sender.tag == 12     // 'x'
+            else if sender.tag == 12
             {
                 resultLabel.text = "x"
             }
-            else if sender.tag == 13     // '-'
+            else if sender.tag == 13
             {
                 resultLabel.text = "-"
             }
-            else if sender.tag == 14     // '+'
+            else if sender.tag == 14
             {
                 resultLabel.text = "+"
             }
@@ -93,9 +93,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        let color1 = UIColor(red: 153 / 255, green: 26 / 255, blue: 61 / 255, alpha: 1.0).cgColor
-        let color2 = UIColor(red: 243 / 255, green: 155 / 255, blue: 51 / 255, alpha: 1.0).cgColor
-        let color3 = UIColor(red: 222 / 255, green: 121 / 255, blue: 69 / 255, alpha: 1.0).cgColor
+        let color1 = UIColor(red: 199 / 255, green: 201 / 255, blue: 69 / 255, alpha: 1.0).cgColor
+        let color2 = UIColor(red: 98 / 255, green: 133 / 255, blue: 54 / 255, alpha: 1.0).cgColor
+        let color3 = UIColor(red: 244 / 255, green: 122 / 255, blue: 62 / 255, alpha: 1.0).cgColor
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.view.bounds
